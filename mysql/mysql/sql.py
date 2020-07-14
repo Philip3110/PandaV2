@@ -15,13 +15,13 @@ c = conn.cursor()
 #     veggies text
 # )""")
 
-shopitmes = [
-    ('Simbra', 'Cadberry', 'Coke', 'vanilla', 'pear', 'Pepper steak', 'Spinach'),
-    ('Lays', 'Tex', 'Fanta', 'Chocolates', 'apple', 'Chicken', 'Cabbage'),
-    ('', '', '', '', 'orange', '', ''),
-]
+# shopitmes = [
+#     ('Simbra', 'Cadberry', 'Coke', 'vanilla', 'pear', 'Pepper steak', 'Spinach'),
+#     ('Lays', 'Tex', 'Fanta', 'Chocolates', 'apple', 'Chicken', 'Cabbage'),
+#     ('', '', '', '', 'orange', '', ''),
+# ]
 
-c.executemany("INSERT INTO shop VALUES(?,?,?,?,?,?,?)", shopitmes)
+# c.executemany("INSERT INTO shop VALUES(?,?,?,?,?,?,?)", shopitmes)
 
 c.execute("SELECT * FROM shop")
 print(c.fetchall())
